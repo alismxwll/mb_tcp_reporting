@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Andrew Akers <andrewrdakers@gmail.com>
 
 RUN apt-get update && apt-get install -y ruby ruby-dev gcc make curl
-RUN gem install sinatra sinatra-contrib haml
+RUN gem install sinatra sinatra-contrib haml axlsx
 
 ADD ./app app
 
